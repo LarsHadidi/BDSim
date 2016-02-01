@@ -1,6 +1,6 @@
 # BDSim
 
-<img src="wiki/res/img/Logo.svg" width="90" align="left" hspace="10" vspace="8" alt="Logo"/>
+<img src="media/img/Logo.svg" width="90" align="left" hspace="10" vspace="8" alt="Logo"/>
 
 **BDSim** is a 2D brownian dynamics simulation software. Its primary purpose is the numerical analysis of *topological defects*, providing serveral programs for simulation, visualization and analysis. This project has been developed during research on topological defects in twodimensional brownian systems at the physics department of Johannes-Gutenberg Universität Mainz.
 
@@ -9,7 +9,7 @@ A detailed introduction can be found [in the wiki.](wiki)
 ## Software Structure
 
 The following figure illustrates the organization of the software system:
-<img src="wiki/res/img/SoftwareArchitecture.svg" width="500" alt="Software Structure"/>
+<img src="media/img/SoftwareArchitecture.svg" width="500" alt="Software Structure"/>
 
 - **BDSim** is the core component which performs the simulation of a twodimensional system of brownian particles. It can measure different thermodynamic quantities and system states as well as extract topological defects.
 - **DTracker** generates the trajectories according to the time evolution of the topological defects
