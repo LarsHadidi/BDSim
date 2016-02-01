@@ -1,0 +1,17 @@
+{
+	"timestep": 0.0001,
+	"relaxation": 0,
+	"simtime" : 0.1,
+	"temperature": 6,
+	"outputpath": "output",
+	"sensors": ["CONFS","VORO-CELLS","VIZ","DEFECTS","PSI6"],
+	"initstate": {
+		"tesselation": "HEXA",
+		"tesselation-parameters": {
+		  "holes" : 0,
+		  "rows" : 32,
+		  "row-sites" : 32,
+		  "density" : 0.70
+		}
+	}
+}

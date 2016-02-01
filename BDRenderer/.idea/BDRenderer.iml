@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="CPP_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Buffer.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Buffer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/ConfigurationsRenderer.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/ConfigurationsRenderer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/DefectsRenderer.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/DefectsRenderer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/DefectsTrajectoriesRenderer.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/DefectsTrajectoriesRenderer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/EffectiveDiameter.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/EffectiveDiameter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/PSI6Renderer.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/PSI6Renderer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/VisualizationRenderer.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/VisualizationRenderer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/VoroCellsRenderer.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/VoroCellsRenderer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/shapes/Colorbar.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/shapes/Colorbar.h" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/bin" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="Header Search Paths">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/src" />
+          <root url="file:///usr/include" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.9/include" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.9/include-fixed" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.9/include/cilk" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.9/include/objc" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.9/include/sanitizer" />
+          <root url="file:///usr/local/include" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/src" />
+          <root url="file:///usr/include" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.9/include" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.9/include-fixed" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.9/include/cilk" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.9/include/objc" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.9/include/sanitizer" />
+          <root url="file:///usr/local/include" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/src/ConfigurationsRenderer.cpp" />
+          <root url="file://$MODULE_DIR$/src/ConfigurationsRenderer.h" />
+          <root url="file://$MODULE_DIR$/src/DefectsRenderer.cpp" />
+          <root url="file://$MODULE_DIR$/src/DefectsRenderer.h" />
+          <root url="file://$MODULE_DIR$/src/DefectsTrajectoriesRenderer.cpp" />
+          <root url="file://$MODULE_DIR$/src/DefectsTrajectoriesRenderer.h" />
+          <root url="file://$MODULE_DIR$/src/VisualizationRenderer.cpp" />
+          <root url="file://$MODULE_DIR$/src/EffectiveDiameter.h" />
+          <root url="file://$MODULE_DIR$/src/PSI6Renderer.cpp" />
+          <root url="file://$MODULE_DIR$/src/PSI6Renderer.h" />
+          <root url="file://$MODULE_DIR$/src/Buffer.h" />
+          <root url="file://$MODULE_DIR$/src/VisualizationRenderer.h" />
+          <root url="file://$MODULE_DIR$/src/VoroCellsRenderer.cpp" />
+          <root url="file://$MODULE_DIR$/src/VoroCellsRenderer.h" />
+          <root url="file://$MODULE_DIR$/src/main.cpp" />
+          <root url="file://$MODULE_DIR$/src/shapes/Colorbar.cpp" />
+          <root url="file://$MODULE_DIR$/src/Buffer.cpp" />
+          <root url="file://$MODULE_DIR$/src/EffectiveDiameter.cpp" />
+          <root url="file://$MODULE_DIR$/src/shapes/Colorbar.h" />
+        </excluded>
+      </library>
+    </orderEntry>
+  </component>
+</module>

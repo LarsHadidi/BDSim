@@ -1,0 +1,9 @@
+#include <samplers/ConfigurationsSampler.h>
+#include <samplers/EnergySampler.h>
+#include <samplers/PressureSampler.h>
+#include <samplers/VisualizationSampler.h>
+#include <samplers/DefectsSampler.h>
+#include <samplers/DefectDensitiesSampler.h>
+#include <samplers/PSI6Sampler.h>
+#include <samplers/GlobalPSI6Sampler.h>
+#include <samplers/VoroCellsSampler.h>
