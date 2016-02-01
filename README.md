@@ -9,7 +9,7 @@ A detailed introduction can be found [in the wiki.](wiki)
 ## Software Structure
 
 The following figure illustrates the organization of the software system:
-<img src="ihttps://cdn.rawgit.com/wiki/LarsHadidi/BDSim/res/img/SoftwareArchitecture.svg" width="500" alt="Software Structure"/>
+<img src="https://cdn.rawgit.com/wiki/LarsHadidi/BDSim/res/img/SoftwareArchitecture.svg" width="500" alt="Software Structure"/>
 
 - **BDSim** is the core component which performs the simulation of a twodimensional system of brownian particles. It can measure different thermodynamic quantities and system states as well as extract topological defects.
 - **DTracker** generates the trajectories according to the time evolution of the topological defects
