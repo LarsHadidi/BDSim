@@ -42,7 +42,7 @@ For the components:
 - [GNU Scientific Library (GSL)](http://www.gnu.org/software/gsl/)
 
 **DTAnalyzer**
-- *optionally:* [STXXL](http://stxxl.sourceforge.net/)
+- [STXXL](http://stxxl.sourceforge.net/)
 
 **BDRenderer**
 - [OpenCV for C++](http://opencv.org/)
