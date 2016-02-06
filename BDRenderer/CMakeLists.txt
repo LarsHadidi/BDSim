@@ -1,13 +1,11 @@
 cmake_minimum_required(VERSION 2.6)
 project(BDRenderer)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -flto -funroll-loops -msse2 -mtune=native")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -flto -mtune=native")
 add_definitions(-DBOOST_LOG_DYN_LINK)
 
 file(GLOB_RECURSE SOURCE_FILES "src/*.cpp")
 set(INC_DIRS "src")
-
-set(INCLUDE_DIRECTORIES ${INC_DIRS})
 
 include_directories(${INC_DIRS})
 add_executable(BDRenderer ${SOURCE_FILES})
