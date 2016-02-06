@@ -52,6 +52,7 @@ For the components:
 
 If all dependencies are present on your system, every component of the BDSim Software can be built using a C++11 compliant compiler. There is a standard CMake configuration file for each component, a detailed description how to set up such a configuration file is given [in the wiki](https://github.com/LarsHadidi/BDSim/wiki).
 Assuming that the standard CMake configuration is sufficient, the following steps are to be performed for each of the five folders which contain the corresponding  components  running:
+
 1. Create a build folder to and out-of-place build.
 2. Run cmake from within that folder to generate the standard build files.
 3. Run the build tool to compile the code.
