@@ -3,10 +3,10 @@
 #include <math.h>
 #include <iostream>
 #include <interfaces/ForceField.h>
-#include <boost/simd/pack.hpp>
-#include <boost/simd/function/plus.hpp>
-#include <boost/simd/function/multiplies.hpp>
-#include <boost/simd/function/sum.hpp>
+#include <boost/simd/sdk/simd/pack.hpp>
+#include <boost/simd/include/functions/plus.hpp>
+#include <boost/simd/include/functions/multiplies.hpp>
+#include <boost/simd/include/functions/sum.hpp>
 #include <boost/property_tree/ptree.hpp>
 
 namespace forcefields {
