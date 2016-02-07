@@ -1,7 +1,4 @@
 {
-	"particles": 1000,
-	"dimx": 100,
-	"dimy": 100,
 	"timestep": 0.0001,
 	"relaxation": 0,
 	"simtime" : 0.1,
@@ -12,6 +9,9 @@
 		"tesselation": "QUAD",
 	  	"tesselation-parameters": {
 		"particle-distribution": "scattered"
+		"particles": 1000,
+		"dimx": 100,
+		"dimy": 100
 	  }
 	}
 }
