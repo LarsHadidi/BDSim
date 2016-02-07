@@ -2,7 +2,7 @@
 
 namespace dumpers {
     DTRJDumper::DTRJDumper(tools::Options& options) :
-    Dumper("", options.outputPath.string(), options.startFrame, options.endFrame),
+    Dumper("", "", options.startFrame, options.endFrame),
     PARTICLES(options.particleCount)
     {
         inputStream.close();

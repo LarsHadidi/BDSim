@@ -2,7 +2,7 @@
 
 namespace dumpers {
     PSI6Dumper::PSI6Dumper(tools::Options& options) :
-    Dumper((options.inputFolder / "PSI6").string(), options.outputPath.string(), options.startFrame, options.endFrame),
+    Dumper((options.inputFolder / "PSI6").string(), (options.outputPath/"PSI6.dump").string(), options.startFrame, options.endFrame),
     PARTICLES(options.particleCount),
     FRAME_SIZE(options.particleCount * sizeof(PSI6Point))
     { }

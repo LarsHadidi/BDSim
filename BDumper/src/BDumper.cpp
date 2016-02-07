@@ -10,7 +10,7 @@ void init(int argc, char** argv, boost::program_options::variables_map* opt_map)
             ("help,help", "produce help message")
             ("type,t", boost::program_options::value<std::string>(),"file type to dump: CONFS, VIZ, DEFECTS, PSI6, DTRJ, VCELLS")
             ("input,i", boost::program_options::value<std::string>(),"input folder")
-            ("output,o",boost::program_options::value<std::string>(),"output file/folder")
+            ("output,o",boost::program_options::value<std::string>(),"output folder")
             ("frames,n",boost::program_options::value<std::string>(), "frames to dump: format is START:END")
            ;
     try {
@@ -54,6 +54,9 @@ int main(int argc, char* argv[]) {
         case tools::Options::VCELLS:
             dumper = new dumpers::VCELLSDumper(options);
             break;
+    }
+    if(!boost::filesystem::exists(options.outputPath)){
+            boost::filesystem::create_directory(options.outputPath);
     }
     BOOST_LOG_TRIVIAL(info) << "Starting to dump data into " << options.outputPath.string();
     dumper->dump();

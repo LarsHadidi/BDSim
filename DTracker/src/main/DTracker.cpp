@@ -60,6 +60,9 @@ int main(int argc, char* argv[]) {
     options.parseParamsFile((boost::filesystem::path(options.inputFolder)/"params").string());
     options.parseSettingsFile((boost::filesystem::path("conf")/"settings.ini"));
 
+    if(!boost::filesystem::exists(options.outputPath)){
+        boost::filesystem::create_directory(options.outputPath);
+    }
     boost::filesystem::copy_file((boost::filesystem::path(options.inputFolder)/"params"), options.outputPath);
 
     boost::filesystem::path inputFile = boost::filesystem::path(options.inputFolder / "DEFECTS-CONFIGURATIONS");

@@ -5,9 +5,9 @@
 #include <forcefields/WeeksChandlerAndersen.h>
 #include <blackBoxFactories/PRNGEngineFactory.h>
 #include <math.h>
-#include <boost/simd/sdk/simd/pack.hpp>
-#include <boost/simd/include/functions/plus.hpp>
-#include <boost/simd/include/functions/multiplies.hpp>
+#include <boost/simd/pack.hpp>
+#include <boost/simd/function/plus.hpp>
+#include <boost/simd/function/multiplies.hpp>
 #include <boost/property_tree/ptree.hpp>
 
 namespace integrators {

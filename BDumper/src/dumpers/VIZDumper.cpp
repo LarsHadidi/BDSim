@@ -2,7 +2,7 @@
 
 namespace dumpers {
     VIZDumper::VIZDumper(tools::Options& options) :
-    Dumper((options.inputFolder / "VIZ").string(), options.outputPath.string(), options.startFrame, options.endFrame),
+    Dumper((options.inputFolder / "VIZ").string(), (options.outputPath/"VIZ.dump").string(), options.startFrame, options.endFrame),
     PARTICLES(options.particleCount),
     FRAME_SIZE(options.particleCount * sizeof(VisualizationDatapoint))
     {

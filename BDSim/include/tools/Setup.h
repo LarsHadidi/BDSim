@@ -131,8 +131,14 @@ class Setup {
                     if (boost::optional<boost::property_tree::iptree&> node = tree->get_child_optional("initstate.tesselation-parameters")) {
 
                         if(tesselationType.compare("QUAD") == 0){
+                            std::set<std::string> distributionNames = {"UNIFORM", "SCATTER"};
+
                             if (node = node->get_child_optional("particle-distribution")) {
                                 boost::to_upper(node->data());
+                                if (tesselationNames.find(node->data()) == tesselationNames.end()){
+                                    BOOST_LOG_TRIVIAL(info) << "Unknown distribution: " << node->data();
+                                    exit(1);
+                                }
                                 BOOST_LOG_TRIVIAL(info) << "\tParticle distribution set to " << node->data();
                             }
                             else {
@@ -140,7 +146,7 @@ class Setup {
                                 exit(1);
                             }
                             try {
-                                uint32_t particles =  tree->get<uint32_t>("particles");
+                                uint32_t particles =  node->get<uint32_t>("particles");
                                 if (particles > 0){
                                     BOOST_LOG_TRIVIAL(info) << "Particles amount: " << particles;
                                 }
@@ -159,7 +165,7 @@ class Setup {
                             }
 
                             try {
-                                double x = tree->get<double>("dimx");
+                                double x = node->get<double>("dimx");
                                 if(x > 0){
                                     BOOST_LOG_TRIVIAL(info) << "Length in x dimension set to " << x;
                                 }
@@ -179,7 +185,7 @@ class Setup {
                             }
 
                             try {
-                                double y = tree->get<double>("dimy");
+                                double y = node->get<double>("dimy");
                                 if (y > 0) {
                                     BOOST_LOG_TRIVIAL(info) << "Length in y dimension set to " << y;
                                 }

@@ -112,6 +112,10 @@ int main(int argc, char* argv[]) {
     options->parseParamsFile((boost::filesystem::path(options->inputFolder)/"params"));
     options->parseSettingsFile((boost::filesystem::path("conf")/"settings.ini"));
 
+    if(!boost::filesystem::exists(options->outputPath)){
+        boost::filesystem::create_directory(options->outputPath);
+    }
+
     std::vector<boost::filesystem::path> inputFiles;
     std::vector<int> chargeMap;
 

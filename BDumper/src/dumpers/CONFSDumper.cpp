@@ -2,7 +2,7 @@
 
 namespace dumpers {
     CONFSDumper::CONFSDumper(tools::Options& options) :
-    Dumper((options.inputFolder / "CONFS").string(), options.outputPath.string(), options.startFrame, options.endFrame),
+    Dumper((options.inputFolder / "CONFS").string(), (options.outputPath/"CONFS.dump").string(), options.startFrame, options.endFrame),
     PARTICLES(options.particleCount),
     FRAME_SIZE(options.particleCount * sizeof(Particle))
     { }

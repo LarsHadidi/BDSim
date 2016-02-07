@@ -2,7 +2,7 @@
 
 namespace dumpers {
     VCELLSDumper::VCELLSDumper(tools::Options& options) :
-    Dumper((options.inputFolder / "VORO-CELLS").string(), options.outputPath.string(), options.startFrame, options.endFrame),
+    Dumper((options.inputFolder / "VORO-CELLS").string(), (options.outputPath/"VORO-CELLS.dump").string(), options.startFrame, options.endFrame),
     PARTICLES(options.particleCount)
     { }
 

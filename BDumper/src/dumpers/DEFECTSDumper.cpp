@@ -2,7 +2,7 @@
 
 namespace dumpers {
     DEFECTSDumper::DEFECTSDumper(tools::Options& options) :
-    Dumper((options.inputFolder / "DEFECTS-CONFIGURATIONS").string(), options.outputPath.string(), options.startFrame, options.endFrame),
+    Dumper((options.inputFolder / "DEFECTS-CONFIGURATIONS").string(), (options.outputPath/"DEFECTS-CONFIGURATIONS.dump").string(), options.startFrame, options.endFrame),
     PARTICLES(options.particleCount)
     { }
 
