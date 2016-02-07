@@ -13,7 +13,7 @@ mkdir build && cd build
 cmake .. -DUSE_SELF_BOOST=
 make update.boost.dispatch
 sudo make install
-cd ..
+cd ../..
 
 echo "Installing iGraph"
 get http://igraph.org/nightly/get/c/igraph-0.7.1.tar.gz
@@ -44,7 +44,7 @@ mkdir build && cd build
 cmake ..
 make
 sudo make install
-cd ..
+cd ../..
 
 echo "Installing OpenCV"
 wget https://github.com/Itseez/opencv/archive/3.1.0.zip
@@ -54,6 +54,6 @@ mkdir build && cd build
 cmake ..
 make
 sudo make install
-cd ..
+cd ../..
 
 echo "Done"
