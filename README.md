@@ -53,10 +53,12 @@ For the components:
 If all dependencies are present on your system, every component of the BDSim Software can be built using a C++11 compliant compiler. There is a standard CMake configuration file for each component, a detailed description how to set up such a configuration file is given [in the wiki](https://github.com/LarsHadidi/BDSim/wiki).
 Assuming that the standard CMake configuration is sufficient, the following steps are to be performed for each of the five folders which contain the corresponding  components  running:
 
-1. Create a build folder to and out-of-place build.
-2. Run cmake from within that folder to generate the standard build files.
-3. Run the build tool to compile the code.
-4. Move the compiled executable into to top-folder which contains the necessary configuration files in subfolders. For more details on this, check out the [wiki](https://github.com/LarsHadidi/BDSim/wiki).
+1. Create a build folder for an out-of-place build: `mkdir build`
+2. Run cmake from within that folder to generate the standard build files: `cd build && cmake ..`
+3. Run the build tool to compile the code: `make`
+4. Move the compiled executable , e.g. BDSim, into to top-folder which contains the necessary configuration files in subfolders. `mv BDSim ../`
+
+For production runs, call cmake with the `-DCMAKE_BUILD_TYPE=Release` flag. To speed up the make process, execute it in parallel. Beware that too many parallel builds may exceed your primary memory capacity.
 
 ## Usage
 
