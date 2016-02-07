@@ -6,7 +6,7 @@ add_definitions(-DBOOST_ALL_DYN_LINK)
 
 file(GLOB_RECURSE SOURCE_FILES "src/main/*.cpp")
 
-set(INC_DIRS "include" "/usr/local/include/Voro++2D")
+set(INC_DIRS "include" "/usr/local/include/Voro++2D" "/usr/local/include/BoostSIMD")
 
 include_directories(${INC_DIRS})
 add_executable(BDSim ${SOURCE_FILES})
