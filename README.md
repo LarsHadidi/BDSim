@@ -2,7 +2,7 @@
 
 <img src="https://cdn.rawgit.com/wiki/LarsHadidi/BDSim/res/img/Logo.svg" width="90" align="left" hspace="10" vspace="8" alt="Logo"/>
 
-**BDSim** is a 2D brownian dynamics simulation software. Its primary purpose is the numerical analysis of *topological defects*, providing several programs for simulation, visualization and analysis. This project has been developed during research on topological defects in twodimensional brownian systems at the physics department of Johannes-Gutenberg Universität Mainz.
+**BDSim** is a 2D Brownian dynamics simulation software. Its primary purpose is the numerical analysis of *topological defects*, providing several programs for simulation, visualization and analysis. This project has been developed during research on topological defects in twodimensional Brownian systems at the physics department of Johannes-Gutenberg Universität Mainz.
 
 A detailed introduction can be found [in the wiki.](https://github.com/LarsHadidi/BDSim/wiki)
 
@@ -12,7 +12,7 @@ The following figure illustrates the organization of the software system:
 
 <img src="https://cdn.rawgit.com/wiki/LarsHadidi/BDSim/res/img/SoftwareArchitecture.svg" width="600" alt="Software Structure"/>
 
-- **BDSim** is the core component which performs the simulation of a twodimensional system of brownian particles. It can measure different thermodynamic quantities and system states as well as extract topological defects.
+- **BDSim** is the core component which performs the simulation of a twodimensional system of Brownian particles. It can measure different thermodynamic quantities and system states as well as extract topological defects.
 - **DTracker** generates the trajectories according to the time evolution of the topological defects
 - **DTAnalyzer** creates statistical analyses of the generated trajectories.
 - **BDRenderer** is used to render video files of the simulated systems, visualizing different aspects like trajectories of the defects, the local bond orientational order parameter, the distribution of the topological charges among the system and several other characteristics.
