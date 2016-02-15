@@ -282,7 +282,8 @@ inline void Simulator::benchmark(){
 		double averageIntegrationDuration = (double) cumulativeIntegrationDuration / BENCHMARK_STEPS;
 		double averageUpdateDuration = (double) cumulativeUpdateDuration / BENCHMARK_STEPS;
 		double averageSamplerDuration[Simulator::samplers->size()];
-		double averageTotalDuration = averageForceCalculationDuration + averageIntegrationDuration + averageUpdateDuration;
+		double averageBaseDuration = averageForceCalculationDuration + averageIntegrationDuration + averageUpdateDuration;
+		double averageTotalDuration = averageBaseDuration;
 		for (int i = 0; i < Simulator::samplers->size(); ++i) {
 			averageSamplerDuration[i] = (double) cumulativeSamplerDuration[i] / BENCHMARK_STEPS;
 			averageTotalDuration += averageSamplerDuration[i];
@@ -325,8 +326,8 @@ inline void Simulator::benchmark(){
 		}
 
 		sstream.str(std::string());
-		if (averageTotalDuration != 0) {
-			std::chrono::duration<double, std::micro> estimatedRuntime(averageTotalDuration * (Simulator::simulationTime + Simulator::relaxationTime) / Simulator::timeStep);
+		if (averageBaseDuration != 0) {
+			std::chrono::duration<double, std::micro> estimatedRuntime((averageBaseDuration *  Simulator::relaxationTime + averageTotalDuration * Simulator::simulationTime) / Simulator::timeStep);
 			sstream <<  std::chrono::duration<double, std::ratio<60, 1>>(estimatedRuntime).count() << " minutes";
 			BOOST_LOG_TRIVIAL(info) << "\tEstimated total runtime: " << sstream.str();
 		}
