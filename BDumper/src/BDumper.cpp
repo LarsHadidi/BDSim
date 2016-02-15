@@ -34,6 +34,10 @@ int main(int argc, char* argv[]) {
     options.parseOptMap(opt_map);
     options.parseParamsFile((boost::filesystem::path(options.inputFolder)/"params").string());
 
+    if(!boost::filesystem::exists(options.outputPath)){
+            boost::filesystem::create_directory(options.outputPath);
+    }
+
     dumpers::Dumper* dumper;
     switch(options.datatype) {
         case tools::Options::CONFS:
@@ -54,9 +58,6 @@ int main(int argc, char* argv[]) {
         case tools::Options::VCELLS:
             dumper = new dumpers::VCELLSDumper(options);
             break;
-    }
-    if(!boost::filesystem::exists(options.outputPath)){
-            boost::filesystem::create_directory(options.outputPath);
     }
     BOOST_LOG_TRIVIAL(info) << "Starting to dump data into " << options.outputPath.string();
     dumper->dump();
