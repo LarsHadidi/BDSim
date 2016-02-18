@@ -1,7 +1,7 @@
 #include <matcher/Matcher.h>
 
 Matcher::Matcher(boost::filesystem::path& inputFile, std::ofstream* outputStream, tools::Options& options)
-: GRID_DIM_X(options.dimX), GRID_DIM_Y(options.dimY), WEIGHTS_OFFSET(std::max(options.dimX, options.dimY)), THRESHOLD(options.threshold * options.threshold), PARTICLE_COUNT(options.particleCount)
+: GRID_DIM_X(options.dimX), GRID_DIM_Y(options.dimY), WEIGHTS_OFFSET(10*options.threshold), THRESHOLD(options.threshold * options.threshold), PARTICLE_COUNT(options.particleCount)
 {
     this->outStream = outputStream;
     this->positionsReader     = new deserializers::PositionsReader(inputFile, options);
