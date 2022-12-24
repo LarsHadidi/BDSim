@@ -1,6 +1,6 @@
 # BDSim
 
-<img src="https://cdn.rawgit.com/wiki/LarsHadidi/BDSim/res/img/Logo.svg" width="90" align="left" hspace="10" vspace="8" alt="Logo"/>
+<img src="Logo.svg" width="90" align="left" hspace="10" vspace="8" alt="Logo"/>
 
 **BDSim** is a 2D Brownian dynamics simulation software. Its primary purpose is the numerical analysis of *topological defects*, providing several programs for simulation, visualization and analysis. This project has been developed during research on topological defects in twodimensional Brownian systems at the physics department of Johannes-Gutenberg Universität Mainz.
 
